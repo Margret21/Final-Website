@@ -1,0 +1,35 @@
+body {
+	font-family: 'Merriweather', serif;
+	width: 90%;
+}
+
+h1 {
+	font-size: 4em;
+	text-align: center;
+	font-family: 'Playfair Display', serif;
+	font-style: italic;
+}
+
+h4 {
+	background: #006699;
+	color: #fff;
+	padding: .5em;
+}
+
+table td {
+	padding: 7px;
+}
+
+.col1 {
+	float: left;
+	width: 32%;
+}
+
+.col2 {
+	width: 65%;
+	float: right;
+}
+
+.clearfix {
+  overflow: auto;
+}
