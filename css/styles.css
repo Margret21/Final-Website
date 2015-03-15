@@ -1,4 +1,5 @@
-/*http://line25.com/tutorials/how-to-create-a-pure-css-dropdown-menu*/
+/*http://line25.com/tutorials/how-to-create-a-pure-css-dropdown-menu
+http://demosthenes.info/blog/58/CSS-and-Images-Simple-Roll-over-Image-Gallery*/
 
 body {
 	font-family: 'Merriweather', serif;
@@ -48,7 +49,7 @@ nav ul {
 nav li {
 	display: inline;
 	float: left;
-	padding: .5em;
+	padding: .5em 1em;
 }
 
 nav a {
@@ -61,7 +62,6 @@ nav a:hover {
 	background: #fff;
 	padding: .5em
 }
-
 
 /* Columns */
 .col1 p {
@@ -93,7 +93,91 @@ nav a:hover {
 	padding: 10px 0;
 }
 
+/* GALLERY */
+body { 
+  margin: 0;
+	font-family: 'Merriweather', serif;
+} 
+dl#simple-gallery { 
+  position: relative;
+  font-size: 0;
+  padding-top: 3rem;
+  padding-bottom: 8rem;
+}
+dl#simple-gallery dt{
+  width: 12.5%;
+  min-width: 50px;
+  cursor: pointer;
+}
+dl#simple-gallery dt img { 
+  width: 100%;
+  height: auto;
+}
+dl#simple-gallery dt:hover+dd, dl#simple-gallery dt:focus+dd { 
+  opacity:1;
+}
+dl#simple-gallery dd { 
+  position: absolute;
+  top: 3rem;
+  left: 10%;
+  opacity: 0;
+  transition: .7s opacity;
+  text-align: center;
+  font-size: 1.4rem;
+  font-style: italic;
+  color: #000;
+  padding-left: 0;
+  width: auto;
 
+}
+dl#simple-gallery dd img{
+  box-shadow:0 0 8px rgba(0,0,0,0.3);
+  display:block;
+  margin-bottom: 1rem;
+}
+
+.horizontal {
+	width: 100%;
+ 	height: auto;
+}
+
+.verticle {
+	width: auto;
+ 	height: 700px;
+}
+
+/* STYLE-TILE */
+
+section {
+	margin: 20px 0;
+}
+ 
+.color-1,
+.color-2,
+.color-3,
+.pattern-1,
+.pattern-2,
+.pattern-3, 
+.imagery-1,
+.imagery-2,
+.imagery-3 {
+	border: 1px solid #000;
+	float: left;
+	margin: 0 10px;
+	height: 50px;
+	width: 50px;
+}
+ 
+/* Set Your Own Typography */
+ 
+ 
+/* Set Your Own Margin & Padding */
+h2, h3, p {
+	margin: 0;
+}
+ 
+/* Clearfix - Oo Not Remove */
+.clearfix {clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}
 
 
 /* MEDIA */
@@ -102,6 +186,9 @@ nav a:hover {
 @media (min-width: 1025px) {
 	.body {
 		width: 70%;
+	}
+	dl#simple-gallery {
+		margin: auto;
 	}
 }
 
