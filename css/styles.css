@@ -83,10 +83,6 @@ nav a:hover {
 	padding: .5em
 }
 
-nav a:active {
-	background: orange
-}
-
 /* Columns */
 .col1 p {
 	border-bottom: dashed #1682B0;
