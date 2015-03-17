@@ -34,6 +34,26 @@ ol li {
 
 .col1 img {
 	border-radius: 10%;
+	width: 95%;
+}
+
+.phone {
+	background-image: url('../img/phone-icon.png');
+}
+
+.map {
+	background-image: url('../img/map-icon.png');
+}
+
+.email {
+	background-image: url('../img/mail-icon.png');
+}
+
+.phone, .email, .map {
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-size: 50px;
+	padding-left: 50px;
 }
 
 /* NAVIGATION */
@@ -63,6 +83,10 @@ nav a:hover {
 	padding: .5em
 }
 
+nav a:active {
+	background: orange
+}
+
 /* Columns */
 .col1 p {
 	border-bottom: dashed #1682B0;
@@ -76,11 +100,11 @@ nav a:hover {
 
 .col1 {
 	float: left;
-	width: 32%;
+	width: 40%;
 }
 
 .col2 {
-	width: 65%;
+	width: 60%;
 	float: right;
 }
 
