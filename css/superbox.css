@@ -28,8 +28,8 @@ img {
 	vertical-align:bottom;
 }
 .wrapper {
-	max-width:1280px;
-	margin:0 auto;
+	max-width:90%;
+	margin: 0 auto;
 }
 
 /* SuperBox */
@@ -37,7 +37,7 @@ img {
 	display:inline-block;
 	*display:inline;
 	zoom:1;
-	width:12.5%;
+	width:14%;
 }
 .superbox-img {
 	max-width:100%;
@@ -62,7 +62,7 @@ img {
 	border:1px solid #222;
 }
 .superbox-img:hover {
-	opacity:0.8;
+	opacity:.;
 }
 .superbox-float {
 	float:left;
@@ -82,21 +82,21 @@ img {
 }
 @media only screen and (min-width: 320px) {
 	.superbox-list {
-		width:50%;
+		width:100%;
 	}
 }
 @media only screen and (min-width: 486px) {
 	.superbox-list {
-		width:25%;
+		width:32.5%;
 	}
 }
 @media only screen and (min-width: 768px) {
 	.superbox-list {
-		width:16.66666667%;
+		width:19%;
 	}
 }
 @media only screen and (min-width: 1025px) {
 	.superbox-list {
-		width:12.5%;
+		width:13.5%;
 	}
 }
